@@ -37,6 +37,12 @@ public class Colosseum {
     static Scanner myScan;
 
     /**
+     * This is the empty constructor.
+     */
+    public Colosseum() {
+    }
+
+    /**
      * How we will build our Pokemon to battle.
      * <p>
      * Obtain user input to set Pokemon's member variables
@@ -73,6 +79,7 @@ public class Colosseum {
      */
     public static Pokemon buildPokemon() {
         Pokemon tempPokemon = new Pokemon();
+        
         return tempPokemon;
     }
 
@@ -90,6 +97,7 @@ public class Colosseum {
      * Implement this function.
      */
     public static void printWhoIsAhead() {
+
         System.out.println("Implement me!");
     }
 

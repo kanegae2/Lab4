@@ -134,4 +134,6 @@ public class Pokemon {
         System.out.println(" ");
         return (opponent.hitPoints < 1);
     }
+
+
 }
