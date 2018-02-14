@@ -20,6 +20,8 @@ public class Colosseum {
      */
     static final int MAX_NUM_ROUNDS = 10;
 
+
+
     /**
      * The first Pokemon we will be fighting.
      */
@@ -79,7 +81,18 @@ public class Colosseum {
      */
     public static Pokemon buildPokemon() {
         Pokemon tempPokemon = new Pokemon();
-        
+        System.out.println("What is the name of your pokemon?");
+        tempPokemon.name = myScan.next();
+        System.out.println("How many points does our pokemon have?");
+        tempPokemon.hitPoints = myScan.nextInt();
+        while (tempPokemon.hitPoints > MAX_HIT_POINTS || tempPokemon.hitPoints < 1) {
+            System.out.println("Sorry hit points have to be between 1 and 50.");
+
+        }
+        tempPokemon.attackLevel = 50 - tempPokemon.hitPoints;
+        while (tempPokemon.attackLevel > 49 || tempPokemon.attackLevel < 1) {
+            System.out.println("Sorry attacklevel is too high or low.");
+        }
         return tempPokemon;
     }
 
